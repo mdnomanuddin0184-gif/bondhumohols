@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বন্ধু মহল সংস্থা - সুদমুক্ত কিস্তিতে সেবা</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Amiri & Kalpurush style) -->
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        islamic: {
+                            green: '#065f46',
+                            lightgreen: '#047857',
+                            gold: '#d97706',
+                            softgold: '#fef3c7',
+                            dark: '#022c22'
+                        }
+                    },
+                    fontFamily: {
+                        bangla: ['Anek Bangla', 'sans-serif'],
+                        arabic: ['Amiri', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Anek Bangla', sans-serif; }
+        .arabic-text { font-family: 'Amiri', serif; }
+        .pattern-bg {
+            background-color: #022c22;
+            background-image: radial-gradient(#d97706 0.75px, transparent 0.75px);
+            background-size: 24px 24px;
+            background-opacity: 0.1;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-islamic-green text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <i class="fa-solid fa-hand-holding-hand text-3xl text-islamic-gold"></i>
+                <span class="text-2xl font-bold tracking-wide">বন্ধু মহল সংস্থা (BMS)</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 space-x-reverse font-medium">
+                <a href="#home" class="hover:text-islamic-gold transition">হোম</a>
+                <a href="#about" class="hover:text-islamic-gold transition">আমাদের সম্পর্কে</a>
+                <a href="#rules" class="hover:text-islamic-gold transition">আইন ও নীতিমালা</a>
+                <a href="#payments" class="hover:text-islamic-gold transition">ফি স্ট্যাটাস</a>
+                <a href="#apply" class="hover:text-islamic-gold transition">আবেদন</a>
+            </nav>
+            <a href="https://wa.me/8801849606800?text=আসসালামু%20আলাইকুম,%20আমি%20কিস্তিতে%20পণ্য%20ক্রয়ের%20জন্য%20আবেদন%20করতে%20চাই।" 
+               target="_blank" 
+               class="bg-islamic-gold hover:bg-yellow-600 text-white px-4 py-2 rounded-lg font-semibold flex items-center gap-2 shadow hover:shadow-lg transition">
+                <i class="fa-brands fa-whatsapp text-xl"></i> হোয়াটসঅ্যাপে যোগাযোগ
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero / Welcome Section -->
+    <section id="home" class="relative bg-islamic-dark text-white py-20 pattern-bg">
+        <div class="container mx-auto px-4 text-center">
+            <p class="arabic-text text-2xl md:text-3xl text-islamic-gold mb-3">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">স্বাগতম — ‘বন্ধু মহল সংস্থা’য়</h1>
+            <p class="text-lg md:text-xl text-emerald-100 max-w-2xl mx-auto mb-8 leading-relaxed">
+                সম্পূর্ণ ইসলামিক শরিয়াহ্‌ মোতাবেক পরিচালিত আমাদের সহজ ও সুদমুক্ত কিস্তি ও ইজারা/বন্ধক সেবা। আপনার প্রয়োজনীয় যেকোনো বৈধ পণ্য ক্রয় বা বন্ধকী সহায়তায় আমরা আছি আপনার পাশে।
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#apply" class="bg-islamic-gold hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition">
+                    আবেদন করুন
+                </a>
+                <a href="#rules" class="bg-transparent border-2 border-islamic-gold text-islamic-gold hover:bg-islamic-gold hover:text-white font-bold py-3 px-8 rounded-lg transition">
+                    নীতিমালা পড়ুন
+                </a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Quranic Verse Banner -->
+    <section class="bg-islamic-green text-white py-8 border-y-4 border-islamic-gold">
+        <div class="container mx-auto px-4 text-center max-w-4xl">
+            <div class="border-l-4 border-islamic-gold pl-4 py-2 my-2 italic">
+                <p class="text-xl md:text-2xl font-semibold mb-2">
+                    "আল্লাহ তায়ালা ব্যবসাকে হালাল করেছেন এবং সুদকে হারাম করেছেন।"
+                </p>
+                <p class="text-islamic-gold font-bold text-lg md:text-xl">
+                    — (সূরা আল-বাকারা: ২৭৫)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notice Bar -->
+    <div class="bg-emerald-100 border-b border-emerald-200 py-3">
+        <div class="container mx-auto px-4 flex items-center justify-center text-islamic-dark font-medium text-center">
+            <i class="fa-solid fa-bullhorn text-islamic-gold mr-3"></i>
+            <span>আমাদের প্রতিষ্ঠানে কোনো ধরনের সুদ, অতিরিক্ত অর্থ বা গোপন চার্জ গ্রহণ করা হয় না।</span>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-5xl text-center">
+            <h2 class="text-3xl font-bold text-islamic-green mb-2">আমাদের সম্পর্কে</h2>
+            <div class="w-16 h-1 bg-islamic-gold mx-auto mb-6"></div>
+            <p class="text-gray-600 leading-relaxed text-lg mb-6">
+                ‘বন্ধু মহল সংস্থা’ একটি সম্পূর্ণ ইসলামিক নীতিমালায় পরিচালিত কল্যাণমুখী প্রতিষ্ঠান। আমরা বিশ্বাস করি সাধারণ মানুষের জীবনযাত্রাকে সহজ করার জন্য একটি সুদমুক্ত অর্থব্যবস্থা অত্যন্ত জরুরি। আমাদের মাধ্যমে আপনি আপনার প্রয়োজনীয় যেকোনো বৈধ পণ্য সহজ কিস্তিতে ক্রয় করতে পারবেন।
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left mt-10">
+                <div class="p-6 bg-emerald-50 rounded-xl border border-emerald-100">
+                    <i class="fa-solid fa-mosque text-3xl text-islamic-green mb-3"></i>
+                    <h3 class="font-bold text-xl mb-2 text-islamic-dark">১০০% ইসলামিক</h3>
+                    <p class="text-gray-600 text-sm">মুরাবাহা (লাভ-ক্ষতি শেয়ারিং/নির্দিষ্ট লাভ) নীতি অনুসরণে ক্রয়-বিক্রয়।</p>
+                </div>
+                <div class="p-6 bg-emerald-50 rounded-xl border border-emerald-100">
+                    <i class="fa-solid fa-handshake text-3xl text-islamic-green mb-3"></i>
+                    <h3 class="font-bold text-xl mb-2 text-islamic-dark">স্বচ্ছ প্রক্রিয়া</h3>
+                    <p class="text-gray-600 text-sm">কোনো ধরনের গোপন ফি বা কিস্তি বিলম্বের জন্য সুদের ব্যবস্থা নেই।</p>
+                </div>
+                <div class="p-6 bg-emerald-50 rounded-xl border border-emerald-100">
+                    <i class="fa-solid fa-shield-halved text-3xl text-islamic-green mb-3"></i>
+                    <h3 class="font-bold text-xl mb-2 text-islamic-dark">সহজ শর্ত</h3>
+                    <p class="text-gray-600 text-sm">সহজ কাগজপত্র ও জামানতে আপনার পছন্দমতো পণ্য ক্রয়ের সুযোগ।</p>
+                </div>
+                <div class="p-6 bg-emerald-50 rounded-xl border border-emerald-100">
+                    <i class="fa-solid fa-house-lock text-3xl text-islamic-green mb-3"></i>
+                    <h3 class="font-bold text-xl mb-2 text-islamic-dark">ইজারা ও বন্ধক</h3>
+                    <p class="text-gray-600 text-sm">কেউ দোকান, জমি বা অন্য যেকোনো সম্পত্তি ইজারা বা বন্ধক দিতে চাইলে ইসলামিক নিয়মে সহজ ব্যবস্থা রয়েছে।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules & Regulations -->
+    <section id="rules" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-3xl font-bold text-center text-islamic-green mb-2">আইন ও পরিচালনা নির্দেশনা</h2>
+            <div class="w-16 h-1 bg-islamic-gold mx-auto mb-10"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Islamic Terms -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-islamic-green">
+                    <h3 class="text-xl font-bold text-islamic-dark mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-book-quran text-islamic-gold"></i> শরীয়াহ্‌ সংক্রান্ত নিয়মাবলী
+                    </h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                            <span>সংস্থা সরাসরি বাজার থেকে কাঙ্ক্ষিত পণ্য ক্রয় করে নির্দিষ্ট লাভে গ্রাহকের কাছে বিক্রি করবে।</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                            <span>দোকান, জমি বা সম্পত্তি ইজারা/বন্ধকের ক্ষেত্রে শরীয়াহ্‌সম্মত চুক্তি সম্পাদন করা হয়।</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                            <span>কোনো প্রকার নগদ টাকা ঋণ দেওয়া হয় না, কেবল পণ্য বা শরীয়াহ্‌সম্মত চুক্তি প্রদান করা হয়।</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                            <span>সময়মতো কিস্তি পরিশোধ না করলে কোনো অতিরিক্ত জরিমানা বা সুদ যুক্ত হবে না।</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- General Terms -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-islamic-gold">
+                    <h3 class="text-xl font-bold text-islamic-dark mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-file-contract text-islamic-green"></i> সাধারণ শর্তাবলী ও যোগ্যতা
+                    </h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                            <span>আবেদনকারীকে অবশ্যই বাংলাদেশের নাগরিক ও প্রাপ্তবয়স্ক হতে হবে।</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                            <span>জাতীয় পরিচয়পত্র (NID) এবং নির্দিষ্ট একজন জামিনদারের প্রয়োজন হবে।</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                            <span>পণ্য বা ইজারা অনুযায়ী নির্দিষ্ট পরিমাণ প্রাথমিক ডাউনপেমেন্ট/জামানত প্রদান করতে হবে।</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MONTHLY PAYMENTS / USER SEARCH SECTION -->
+    <section id="payments" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl font-bold text-center text-islamic-green mb-2">গ্রাহক তথ্য খুঁজুন</h2>
+            <div class="w-16 h-1 bg-islamic-gold mx-auto mb-8"></div>
+
+            <div id="section-payments" class="space-y-4">
+                <div class="bg-white p-5 rounded-2xl border border-gray-200 card-shadow space-y-3">
+                    <h3 class="font-bold text-gray-800 text-base flex items-center">
+                        <i class="fa-solid fa-id-card text-emerald-600 mr-2"></i>প্রোফাইল স্ট্যাটাস
+                    </h3>
+                    <div class="space-y-2">
+                        <label class="text-xs font-semibold text-gray-600">ইউজার নম্বর লিখুন:</label>
+                        <div class="flex gap-2">
+                            <input type="text" id="user-code-input" placeholder="আপনার ইউজার নম্বর প্রবেশ করান..." class="w-full border p-2.5 rounded-xl text-sm outline-none focus:ring-2 focus:ring-emerald-500 bg-white">
+                            <button id="search-btn" class="bg-islamic-green hover:bg-emerald-800 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition">
+                                খুঁজুন
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ইউজার প্রোফাইল বিবরণ কার্ড -->
+                <div id="user-month-status-card" class="bg-white p-5 rounded-2xl border border-gray-200 card-shadow space-y-4 hidden">
+                    <div id="user-profile-details" class="space-y-3">
+                        <!-- ডাইনামিক প্রোফাইল ইনফো এখানে দেখাবে -->
+                    </div>
+
+                    <h4 class="font-bold text-gray-800 text-sm border-t pt-3 flex items-center gap-1">
+                        <i class="fa-solid fa-receipt text-islamic-gold"></i> কিস্তির ইতিহাস ও বিবরণ:
+                    </h4>
+                    <div id="user-monthly-members-list" class="space-y-2 max-h-80 overflow-y-auto pr-1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application / WhatsApp CTA Section -->
+    <section id="apply" class="py-16 bg-islamic-dark text-white pattern-bg">
+        <div class="container mx-auto px-4 max-w-3xl text-center">
+            <i class="fa-brands fa-whatsapp text-6xl text-emerald-400 mb-4"></i>
+            <h2 class="text-3xl font-bold mb-4">আবেদন ও যোগাযোগ করুন</h2>
+            <p class="text-emerald-100 mb-8 leading-relaxed">
+                পণ্য কিস্তিতে ক্রয় অথবা দোকান, জমি বা অন্যান্য সম্পত্তি ইজারা/বন্ধক রাখতে সরাসরি আমাদের হোয়াটসঅ্যাপে যোগাযোগ করে আবেদন জমা দিতে পারেন।
+            </p>
+            
+            <a href="https://wa.me/8801849606800?text=আসসালামু%20আলাইকুম,%20আমি%20আবেদন%20করতে%20চাই।%20বিবরণ:" 
+               target="_blank" 
+               class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-8 rounded-full shadow-2xl text-lg transition transform hover:-translate-y-1">
+                <i class="fa-brands fa-whatsapp text-2xl"></i> সরাসরি হোয়াটসঅ্যাপে আবেদন করুন
+            </a>
+            <p class="text-xs text-emerald-300 mt-4">* বাটনটিতে ক্লিক করলে সরাসরি হোয়াটসঅ্যাপ চ্যাট ওপেন হবে।</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-8 border-t border-emerald-900">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-white font-semibold text-lg mb-2">বন্ধু মহল সংস্থা</p>
+            <p class="text-sm mb-4">সুদমুক্ত ও শরীয়াহ্‌ সম্মত কিস্তি ও ইজারা/বন্ধক সেবা</p>
+            <p class="text-xs text-gray-500">&copy; ২০২৬ বন্ধু মহল সংস্থা। সর্বস্বত্ব সংরক্ষিত।</p>
+            <p class="text-white font-semibold text-sm mt-2">প্রধান পরিচালক: Md Noman Uddin</p>
+        </div>
+    </footer>
+
+    <!-- Firebase Configuration & Script -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+        // একই Realtime Database: admin3.html + user3.html + 9.html
+        const firebaseConfig = {
+            apiKey: "AIzaSyDxijn_v3OD7kKjDXiBcSOjmS9GtFrOEUE",
+            authDomain: "bms-a2b17.firebaseapp.com",
+            databaseURL: "https://bms-a2b17-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "bms-a2b17",
+            storageBucket: "bms-a2b17.firebasestorage.app",
+            messagingSenderId: "1001349417118",
+            appId: "1:1001349417118:web:190e7c2b1cbb83f899d38f",
+            measurementId: "G-HJR0409YV1"
+        };
+
+        if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
+
+        const inputEl = document.getElementById("user-code-input");
+        const searchBtn = document.getElementById("search-btn");
+        const statusCard = document.getElementById("user-month-status-card");
+        const profileDetailsEl = document.getElementById("user-profile-details");
+        const listEl = document.getElementById("user-monthly-members-list");
+
+        function escapeHtml(value) {
+            return String(value ?? '').replace(/[&<>"']/g, ch => ({
+                '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#039;'
+            }[ch]));
+        }
+
+        function toBanglaNumber(value) {
+            return String(value ?? 0).replace(/\d/g, d => '০১২৩৪৫৬৭৮৯'[d]);
+        }
+
+        async function findMemberByUserCode(userCode) {
+            const snapshot = await db.ref("bondhumohal_data/members").once("value");
+            const raw = snapshot.val();
+            const members = raw ? Object.values(raw) : [];
+            const wanted = String(userCode).trim().toUpperCase();
+            return members.find(member =>
+                String(member.userCode || '').trim().toUpperCase() === wanted
+            ) || null;
+        }
+
+        searchBtn.addEventListener("click", async function() {
+            const userCode = inputEl.value.trim().toUpperCase();
+
+            if (!userCode) {
+                alert("অনুগ্রহ করে আপনার ইউজার কোড লিখুন!");
+                return;
+            }
+
+            statusCard.classList.remove("hidden");
+            profileDetailsEl.innerHTML = `<p class="text-xs text-gray-500 py-2 text-center">তথ্য খোঁজা হচ্ছে...</p>`;
+            listEl.innerHTML = "";
+
+            try {
+                const data = await findMemberByUserCode(userCode);
+
+                if (!data) {
+                    profileDetailsEl.innerHTML = `<p class="text-xs text-red-500 py-2 text-center">এই ইউজার কোড দিয়ে কোনো সদস্যের প্রোফাইল পাওয়া যায়নি।</p>`;
+                    return;
+                }
+
+                const history = Array.isArray(data.installmentHistory)
+                    ? data.installmentHistory
+                    : (data.installmentHistory ? Object.values(data.installmentHistory) : []);
+
+                const totalPaid = history.reduce((sum, item) => sum + Number(item.amount || 0), 0);
+
+                profileDetailsEl.innerHTML = `
+                    <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-200">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="font-bold text-base text-islamic-dark">${escapeHtml(data.name || 'অজানা')}</h3>
+                                <p class="text-xs text-gray-600"><i class="fa-solid fa-phone text-emerald-600 mr-1"></i> ${escapeHtml(data.phone || '-')}</p>
+                                <p class="text-xs text-gray-600 mt-1"><i class="fa-solid fa-user-tag text-emerald-600 mr-1"></i> ${escapeHtml(data.designation || 'সদস্য')}</p>
+                            </div>
+                            <span class="bg-islamic-gold text-white text-[11px] font-bold px-2.5 py-1 rounded-md">কোড: ${escapeHtml(data.userCode || userCode)}</span>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-emerald-200 text-center text-xs">
+                            <div class="bg-white p-2 rounded-lg border border-emerald-100">
+                                <span class="block text-gray-500 text-[10px]">ইনভেস্ট</span>
+                                <span class="font-bold text-islamic-dark text-sm">৳ ${toBanglaNumber(Number(data.invest || 0).toLocaleString('en-IN'))}</span>
+                            </div>
+                            <div class="bg-white p-2 rounded-lg border border-emerald-100">
+                                <span class="block text-emerald-600 text-[10px]">পরিশোধিত কিস্তি</span>
+                                <span class="font-bold text-emerald-700 text-sm">${toBanglaNumber(history.length)} টি</span>
+                            </div>
+                            <div class="bg-white p-2 rounded-lg border border-emerald-100">
+                                <span class="block text-rose-500 text-[10px]">মোট কিস্তির টাকা</span>
+                                <span class="font-bold text-rose-600 text-sm">৳ ${toBanglaNumber(totalPaid.toLocaleString('en-IN'))}</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-2 mt-2 text-center text-xs">
+                            <div class="bg-white p-2 rounded-lg border border-gray-100">
+                                <span class="block text-gray-500 text-[10px]">বর্তমান ব্যালেন্স</span>
+                                <span class="font-bold text-gray-800 text-sm">৳ ${toBanglaNumber(Number(data.balance || 0).toLocaleString('en-IN'))}</span>
+                            </div>
+                            <div class="bg-white p-2 rounded-lg border border-gray-100">
+                                <span class="block text-gray-500 text-[10px]">জরিমানা</span>
+                                <span class="font-bold text-rose-600 text-sm">৳ ${toBanglaNumber(Number(data.fine || 0).toLocaleString('en-IN'))}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                if (!history.length) {
+                    listEl.innerHTML = `<p class="text-xs text-gray-500 py-2 text-center">কোনো কিস্তির রেকর্ড পাওয়া যায়নি।</p>`;
+                    return;
+                }
+
+                history.forEach((item, index) => {
+                    const div = document.createElement("div");
+                    div.className = "flex items-center justify-between p-3 bg-gray-50 rounded-xl border border-gray-100";
+                    div.innerHTML = `
+                        <div>
+                            <p class="text-xs font-bold text-gray-800">${toBanglaNumber(index + 1)}. কিস্তি</p>
+                            <p class="text-[10px] text-gray-500">${escapeHtml(item.date || '-')}</p>
+                        </div>
+                        <span class="font-bold text-emerald-700 text-sm">৳ ${toBanglaNumber(Number(item.amount || 0).toLocaleString('en-IN'))}</span>
+                    `;
+                    listEl.appendChild(div);
+                });
+
+            } catch (error) {
+                console.error("Profile search error:", error);
+                profileDetailsEl.innerHTML = `<p class="text-xs text-red-500 py-2 text-center">তথ্য লোড করতে সমস্যা হয়েছে। আবার চেষ্টা করুন।</p>`;
+            }
+        });
+
+        inputEl.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") searchBtn.click();
+        });
+    </script>
+</body>
+</html>
